@@ -23,4 +23,5 @@ namespace ProblemOne_IncorrectSolution
             Console.WriteLine("The sum of all number divisble by 3 and 5 between 1 and 10000 is " + result);
         }
     }
+    
 }
