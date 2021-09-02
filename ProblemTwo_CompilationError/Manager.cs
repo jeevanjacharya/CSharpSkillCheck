@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace ProblemTwo_CompilationError
 {
-    class Manager
+    class Manager : Employee
     {
         public List<Employee> DirectReports { get; set; }
         public string CostCode { get; set; }
 
-        public Manager(List<Employee> drEmployeesLst, string cCode) :base(eID, eName, eLevel, eDoJ)
+        public Manager(int eID, string eName, int eLevel, DateTime eDoJ, List<Employee> drEmployeesLst, string cCode)
         {
+            this.EmpID = eID;
+            this.EmpLevel = eLevel;
+            this.EmpName = eName;
+            this.DateOfJoining = eDoJ;
             DirectReports = drEmployeesLst;
             CostCode = cCode;
+
+        }
+        public Manager() : base()
+        {
 
         }
 
